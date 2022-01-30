@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="col-4 ms-2 me-2">
+      <div class="row">
+       <h2 mr-4>Title : {{ product.title }}</h2>
+       <h2>Posted by {{ product.author }}</h2>
+      </div>
+      <div class="row">
+        <img src="{{ product.image.url }} " class="img-fluid"> 
+       </div>
+       <div class="row">
+        <h3>Product Description By Author</h3><br/>
+        <p>{{ product.body }}</p>
+       </div>
+      </div>
+{% endblock content %}
